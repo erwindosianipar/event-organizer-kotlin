@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f2f2f2">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rel_design_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_margin="15dp"
+                android:id="@+id/txtEventName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="Event Name"/>
+
+            <ImageView
+                android:layout_below="@id/txtEventName"
+                android:id="@+id/imageEvent"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:background="#DDDDDD"
+                android:src="@drawable/ic_whatshot_black_24dp" />
+
+            <RelativeLayout
+                android:layout_margin="10dp"
+                android:id="@+id/relLoc"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/imageEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ic_loc"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_location_on_black_24dp"/>
+
+                <TextView
+                    android:layout_toEndOf="@id/ic_loc"
+                    android:layout_width="match_parent"
+                    android:text="Lokasi"
+                    android:id="@+id/txtLocation"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="10dp"
+                android:id="@+id/relDate"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/relLoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iconDate"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_date_range_black_24dp"/>
+
+            <TextView
+                android:layout_toEndOf="@id/iconDate"
+                android:layout_width="match_parent"
+                android:text="20/01/2020"
+                android:id="@+id/tglEvent"
+                android:textSize="20sp"
+                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+            <RelativeLayout
+                android:layout_margin="10dp"
+                android:id="@+id/rel_count_people"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/relDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iconPeople"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_person_black_24dp"/>
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/iconPeople"
+                    android:layout_width="match_parent"
+                    android:text="50"
+                    android:textSize="20sp"
+                    android:id="@+id/txtKuota"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_margin="10dp"
+                android:id="@+id/rel_count_price"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/rel_count_people"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/icon_price"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_monetization_on_black_24dp"/>
+
+                <TextView
+                    android:id="@+id/txtPrice"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/icon_price"
+                    android:layout_width="match_parent"
+                    android:text="IDR 50.000, 00"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
